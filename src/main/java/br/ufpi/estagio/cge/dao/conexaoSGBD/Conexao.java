@@ -36,7 +36,7 @@ public class Conexao {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conexao = DriverManager.getConnection("jdbc:mysql://localhost/infofolha_cge",
-					"root", "abcd1234");System.out.println("Conexao com o banco estabelecida com sucesso !");
+					"root", "root");System.out.println("Conexao com o banco estabelecida com sucesso !");
 	    } catch (ConexaoException e){
 	    	  System.out.println("Nao foi possivel conectar ao banco.");
 	    	  System.out.println(e.getMessage());
