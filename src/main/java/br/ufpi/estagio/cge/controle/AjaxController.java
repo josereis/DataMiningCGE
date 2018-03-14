@@ -190,12 +190,11 @@ public class AjaxController {
 	 * @return - grafico piramidal com as categorias/orgaos
 	 * @throws Exception 
 	 */
-	@RequestMapping(value = "/piramide", method = RequestMethod.POST)
+	@RequestMapping(value = "/backend/piramide", method = RequestMethod.POST)
 	public String piramideHierarquica(@RequestBody Dados dados) throws Exception {
 
 		try {
 			return AlgoritmoBusca.piramideHierarquica(dados);
-
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import br.ufpi.estagio.cge.sistema.excecoes.DispersaoException;
@@ -22,7 +23,7 @@ import br.ufpi.estagio.cge.sistema.excecoes.SomaSalarioException;
  * @author Irvayne Matheus
  *
  */
-@Controller
+@RestController
 public class HomeController {
 	/**
 	 * Metodo para carregar a view inicial
@@ -32,11 +33,11 @@ public class HomeController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
 		
 		return "index";
-	}
+	}*/
 	/**
 	 * Metodo para carregar a view mediaSalarial
 	 * @return - view mediaSalarial
